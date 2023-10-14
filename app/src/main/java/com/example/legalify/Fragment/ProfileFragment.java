@@ -67,7 +67,6 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView ( LayoutInflater inflater, ViewGroup container,
                                Bundle savedInstanceState ) {
-
         View view =  inflater.inflate( R.layout.fragment_profile, container, false );
         edit_profile_rl =(RelativeLayout) view.findViewById( R.id.edit_profile_rl );
         profile_civ =(CircleImageView) view.findViewById( R.id.profile_civ );

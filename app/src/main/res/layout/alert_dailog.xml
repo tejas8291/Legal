@@ -48,7 +48,6 @@
                 android:layout_marginRight="30dp"
                 android:background="@color/gray"/>
 
-
         <RelativeLayout
             android:id="@+id/gallery_rl"
             android:layout_width="match_parent"
@@ -71,9 +70,8 @@
 
         </RelativeLayout>
 
-
         </LinearLayout>
 
-
     </androidx.cardview.widget.CardView>
+
 </RelativeLayout>

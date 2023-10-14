@@ -35,10 +35,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
     Fragment fragment = null;
-    private BottomNavigationView bottomNavigationView;
-
     @Override
     protected void onCreate ( Bundle savedInstanceState ) {
         super.onCreate( savedInstanceState );

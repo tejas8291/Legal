@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".Fragment.AddFragment">
 
     <RelativeLayout
@@ -13,56 +13,56 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:src="@drawable/left_arrow_icon"
-        app:tint="@color/black" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/left_arrow_icon"
+            app:tint="@color/black" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_centerVertical="true"
-        android:layout_centerInParent="true"
-        android:text="Cases"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="Cases"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-           android:layout_alignParentRight="true"
             android:src="@drawable/profile_image"
             app:tint="@color/black" />
 
-</RelativeLayout>
+    </RelativeLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Most Selected issue"
         android:fontFamily="@font/poppins_regular"
-        android:textStyle="bold"
+        android:text="Most Selected issue"
         android:textColor="@color/blue_text_color"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:textColorHint="@color/gray"
-        android:textColor="@color/gray"
         android:background="@drawable/edit_text_drawable"
         android:hint="Search your cases"
-        android:padding="15dp" />
+        android:padding="15dp"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -76,14 +76,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_centerVertical="true"
                 android:layout_centerInParent="true"
-                android:text="I'm looking for"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
                 android:fontFamily="@font/poppins_regular"
-                android:textStyle="bold"
+                android:text="I'm looking for"
                 android:textColor="@color/blue_text_color"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <RelativeLayout
                 android:id="@+id/filingCase_rl"
@@ -96,35 +96,36 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="50dp"
                     android:layout_height="70dp"
+                    android:layout_margin="10dp"
                     app:cardCornerRadius="5dp"
-                    app:cardElevation="5dp"
-                    android:layout_margin="10dp">
+                    app:cardElevation="5dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/profile_image"/>
+                        android:src="@drawable/profile_image" />
 
                 </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                   android:layout_centerInParent="true"
+                    android:layout_centerInParent="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="30dp"
-                    android:text="Filing Case"
                     android:fontFamily="@font/poppins_regular"
-                    android:textStyle="bold"
+                    android:text="Filing Case"
                     android:textColor="@color/blue_text_color"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                   android:layout_centerVertical="true"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/right_arrow_icon"/>
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/right_arrow_icon" />
 
             </RelativeLayout>
 
@@ -132,15 +133,15 @@
                 android:id="@+id/case_ll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-               android:visibility="gone"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="gone">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="2"
                     android:layout_margin="10dp"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
                     <RelativeLayout
                         android:id="@+id/civil_rl"
@@ -154,30 +155,30 @@
                             android:id="@+id/civil_cv"
                             android:layout_width="50dp"
                             android:layout_height="60dp"
+                            android:layout_margin="10dp"
                             app:cardCornerRadius="5dp"
-                            app:cardElevation="5dp"
-                            android:layout_margin="10dp">
+                            app:cardElevation="5dp">
 
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
-                                android:src="@drawable/profile_image"/>
+                                android:src="@drawable/profile_image" />
 
                         </androidx.cardview.widget.CardView>
 
                         <TextView
-                            android:layout_toRightOf="@id/civil_cv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                           android:layout_marginStart="10dp"
                             android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
                             android:layout_marginEnd="30dp"
-                            android:text="Civil"
+                            android:layout_toRightOf="@id/civil_cv"
                             android:fontFamily="@font/poppins_regular"
-                            android:textStyle="bold"
+                            android:text="Civil"
                             android:textColor="@color/blue_text_color"
-                            android:textSize="12sp"/>
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
                     </RelativeLayout>
 
@@ -192,25 +193,25 @@
                             android:id="@+id/case_cv"
                             android:layout_width="50dp"
                             android:layout_height="60dp"
+                            android:layout_margin="10dp"
                             app:cardCornerRadius="5dp"
-                            app:cardElevation="5dp"
-                            android:layout_margin="10dp">
+                            app:cardElevation="5dp">
 
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
-                                android:src="@drawable/profile_image"/>
+                                android:src="@drawable/profile_image" />
 
                         </androidx.cardview.widget.CardView>
 
                         <TextView
-                            android:layout_toRightOf="@id/case_cv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
                             android:layout_marginStart="10dp"
                             android:layout_marginEnd="10dp"
-                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/case_cv"
                             android:fontFamily="@font/poppins_regular"
                             android:text="Criminal"
                             android:textColor="@color/blue_text_color"
@@ -226,8 +227,8 @@
                     android:layout_height="70dp"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/edit_text_drawable">
 
@@ -235,33 +236,32 @@
                         android:id="@+id/complain_cv"
                         android:layout_width="50dp"
                         android:layout_height="60dp"
+                        android:layout_margin="10dp"
                         app:cardCornerRadius="5dp"
-                        app:cardElevation="5dp"
-                        android:layout_margin="10dp">
+                        app:cardElevation="5dp">
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/profile_image"/>
+                            android:src="@drawable/profile_image" />
 
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:layout_toRightOf="@id/complain_cv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:text="consumer complain"
+                        android:layout_toRightOf="@id/complain_cv"
                         android:fontFamily="@font/poppins_regular"
-                        android:textStyle="bold"
+                        android:text="consumer complain"
                         android:textColor="@color/blue_text_color"
-                        android:textSize="12sp"/>
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
-
 
             </LinearLayout>
 
@@ -276,15 +276,15 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="50dp"
                     android:layout_height="70dp"
+                    android:layout_margin="10dp"
                     app:cardCornerRadius="5dp"
-                    app:cardElevation="5dp"
-                    android:layout_margin="10dp">
+                    app:cardElevation="5dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/profile_image"/>
+                        android:src="@drawable/profile_image" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -294,17 +294,18 @@
                     android:layout_centerInParent="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="30dp"
-                    android:text="Existing Case"
                     android:fontFamily="@font/poppins_regular"
-                    android:textStyle="bold"
+                    android:text="Existing Case"
                     android:textColor="@color/blue_text_color"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_centerVertical="true"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/right_arrow_icon"/>
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/right_arrow_icon" />
 
             </RelativeLayout>
 
@@ -319,15 +320,15 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="50dp"
                     android:layout_height="70dp"
+                    android:layout_margin="10dp"
                     app:cardCornerRadius="5dp"
-                    app:cardElevation="5dp"
-                    android:layout_margin="10dp">
+                    app:cardElevation="5dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/profile_image"/>
+                        android:src="@drawable/profile_image" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -337,17 +338,18 @@
                     android:layout_centerInParent="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="30dp"
-                    android:text="Send Notice"
                     android:fontFamily="@font/poppins_regular"
-                    android:textStyle="bold"
+                    android:text="Send Notice"
                     android:textColor="@color/blue_text_color"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_centerVertical="true"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/right_arrow_icon"/>
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/right_arrow_icon" />
 
             </RelativeLayout>
 
@@ -362,15 +364,15 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="50dp"
                     android:layout_height="70dp"
+                    android:layout_margin="10dp"
                     app:cardCornerRadius="5dp"
-                    app:cardElevation="5dp"
-                    android:layout_margin="10dp">
+                    app:cardElevation="5dp">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/profile_image"/>
+                        android:src="@drawable/profile_image" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -380,24 +382,23 @@
                     android:layout_centerInParent="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="30dp"
-                    android:text="RTI"
                     android:fontFamily="@font/poppins_regular"
-                    android:textStyle="bold"
+                    android:text="RTI"
                     android:textColor="@color/blue_text_color"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_centerVertical="true"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/right_arrow_icon"/>
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/right_arrow_icon" />
 
             </RelativeLayout>
-
 
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
-
 
 </LinearLayout>

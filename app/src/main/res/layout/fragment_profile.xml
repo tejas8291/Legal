@@ -48,7 +48,6 @@
 
         </RelativeLayout>
 
-
     </RelativeLayout>
 
     <androidx.core.widget.NestedScrollView
@@ -68,6 +67,7 @@
             android:elevation="3dp"
             app:cardBackgroundColor="@color/edit_back_color"
             app:cardElevation="3dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -317,9 +317,7 @@
             android:text="Call Charges"
             android:textColor="@color/black"
             android:textSize="14sp" />
-
-
-
+        
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
